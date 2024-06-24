@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-install-dependencies:
-    uses: Elioric/repo-template-actions/.github/workflows/install_dependencies.yml@main
+    uses: Elioric/repo-template-actions/.github/workflows/install_dependencies.yml@master
     with:
       node-version: '14'

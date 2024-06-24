@@ -10,6 +10,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  call-hello:
+    uses: Elioric/repo-template-actions/main.yml@master
   call-install-dependencies:
     uses: Elioric/repo-template-actions/.github/workflows/install_dependencies.yml@master
     with:

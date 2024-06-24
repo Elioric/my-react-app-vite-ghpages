@@ -1,0 +1,15 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-install-dependencies:
+    uses: Elioric/repo-template-actions/.github/workflows/install_dependencies.yml@main
+    with:
+      node-version: '14'
